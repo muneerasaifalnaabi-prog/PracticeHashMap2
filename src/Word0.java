@@ -5,12 +5,11 @@ public class Word0 {
     public static void main(String[] args) {
         Map<String,Integer> map = new HashMap<>();
         String[] arr={"a","b","c","d","e","f","g","h"};
-        for(String s:arr){
-          map.put(s,0);
+        System.out.println(word0(arr));
         }
 
-    }
-    public static Map<String,Integer> Word0(String[] words){
+
+    public static Map<String,Integer> word0(String[] words){
         Map<String,Integer> map = new HashMap<>();
         for (String word : words) {
             map.put(word,0);
