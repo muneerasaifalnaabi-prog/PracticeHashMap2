@@ -4,6 +4,7 @@ import java.util.Map;
 public class WordLen {
     public static void main(String[] args) {
 
+
     }
     public static Map<String, Integer> wordLen(String []arr){
         Map<String, Integer> map = new HashMap<>();
@@ -12,6 +13,7 @@ public class WordLen {
             map.put(word,word.length());
 
         }
+        return map;
 
     }
 
