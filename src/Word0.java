@@ -7,6 +7,10 @@ public class Word0 {
     }
     public static Map<String,Integer> Word0(String[] words){
         Map<String,Integer> map = new HashMap<>();
+        for (String word : words) {
+
+        }
+        )
 
     }
 }
