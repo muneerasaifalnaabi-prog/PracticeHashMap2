@@ -5,7 +5,9 @@ public class Word0 {
     public static void main(String[] args) {
         Map<String,Integer> map = new HashMap<>();
         String[] arr={"a","b","c","d","e","f","g","h"};
+        String[] arr1={"a","b"};
         System.out.println(word0(arr));
+        System.out.println(word0(arr1));
         }
 
 
