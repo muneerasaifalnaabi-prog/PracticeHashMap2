@@ -4,9 +4,8 @@ import java.util.Map;
 public class WordLen {
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap<>();
-        String[] words = {"hello","hello","hello","hello","hello","hello"};
+        String[] words = {"a", "bb", "a", "bb"};
         System.out.println(wordLen(words));
-
 
     }
     public static Map<String, Integer> wordLen(String []arr){
