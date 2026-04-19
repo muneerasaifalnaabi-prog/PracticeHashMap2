@@ -6,7 +6,7 @@ public class Word0 {
         Map<String,Integer> map = new HashMap<>();
         String[] arr={"a","b","c","d","e","f","g","h"};
         for(String s:arr){
-
+          map.put(s,0);
         }
 
     }
