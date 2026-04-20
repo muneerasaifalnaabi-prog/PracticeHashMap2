@@ -11,7 +11,7 @@ public class firstChar {
             String key =String.valueOf(s.charAt(0));
             if (map.containsKey(key)) {
 
-                ma
+                map.put(key,map.get(key)+s);
             }
 
         }
