@@ -3,6 +3,7 @@ import java.util.Map;
 
 public class pairs {
     public static void main(String[] args) {
+        Map<String, String> map = new HashMap<>();
 
     }
     public static Map<String, String> wordLen(String []arr){
