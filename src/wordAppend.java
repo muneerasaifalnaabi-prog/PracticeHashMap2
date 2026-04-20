@@ -8,9 +8,12 @@ public class wordAppend {
 
     public static String wordAppend(String[] arr) {
         Map<String, String> map = new HashMap<>();
+        String
+        for (String s :arr){
+        String key =String.valueOf(s.charAt(0));
+        if (map.containsKey(key)) {
 
-        for (String s:arr){
-            if
+        }
         }
 
     }
