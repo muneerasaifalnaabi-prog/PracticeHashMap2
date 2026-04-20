@@ -4,9 +4,10 @@ import java.util.Map;
 public class allSwap {
     public static void main(String[] args) {
         String[] words = {"ab", "ac"};
-        System.out.println(wordMultiple(words));
+        String[] result1 = allSwap(words);
+
     }
-    public static String[]  wordMultiple(String [] arr ) {
+    public static String[]  allSwap(String [] arr ) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
 
