@@ -5,8 +5,9 @@ public class wordMultiple {
     public static void main(String[] args) {
 
     }
-    public static Map<String, Boolean> firstChar(String [] arr ){
+    public static boolean wordMultiple(String [] arr ){
         Map<String, Integer> map = new HashMap<>();
+        Map<String, Boolean> map1 = new HashMap<>();
 
         for (String s:arr){
             if (map.containsKey(s)){
@@ -15,12 +16,15 @@ public class wordMultiple {
             else{
                 map.put(s,1);
             }
-            if (map.get(s)>=2){
-                return true;
-            }
+
+        }
+        for (String r:map.keySet()){
+           if(map1.put(r,map.get(r)>=2)){
+               return true;
+           }
         }
 
 
-
+        return false;
     }
 }
