@@ -3,6 +3,9 @@ import java.util.Map;
 
 public class wordCount {
     public static void main(String[] args) {
+        Map<String, Integer> map = new HashMap<>();
+        String[] words = {"a", "bb", "a", "bb"};
+        sout
 
     }
     public static Map<String, Integer> pairs(String []arr){
