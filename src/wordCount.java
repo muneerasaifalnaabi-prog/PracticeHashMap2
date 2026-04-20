@@ -3,12 +3,11 @@ import java.util.Map;
 
 public class wordCount {
     public static void main(String[] args) {
-        Map<String, Integer> map = new HashMap<>();
         String[] words = {"a", "b", "a", "c", "b"};
-        System.out.println(pairs(words));
+        System.out.println(wordCount(words));
 
     }
-    public static Map<String, Integer> pairs(String []arr){
+    public static Map<String, Integer> wordCount(String []arr){
         Map<String, Integer> map = new HashMap<>();
         int count =0;
         for (int i =0;i< arr.length;i++){

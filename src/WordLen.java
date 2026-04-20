@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class WordLen {
     public static void main(String[] args) {
-        Map<String, Integer> map = new HashMap<>();
+
         String[] words = {"a", "bb", "a", "bb"};
         System.out.println(wordLen(words));
 
