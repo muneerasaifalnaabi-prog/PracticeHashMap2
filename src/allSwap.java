@@ -3,29 +3,32 @@ import java.util.Map;
 
 public class allSwap {
     public static void main(String[] args) {
-        String[] words = {"ab", "ac"};
-        String[] result1 = allSwap(words);
-
+        String[] words = {"ax", "bx", "cx", "cy", "by", "ay", "aaa", "azz"};
+        String[] result =allSwap(words);
+        for (String s:result){
+            System.out.println(s);
+        }
     }
-    public static String[]  allSwap(String [] arr ) {
+    public static String[] allSwap(String[] arr) {
+        HashMap<String, Integer> map = new HashMap<>();
+
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
+            String firstChar = arr[i].substring(0, 1);
 
+            if (map.containsKey(firstChar)) {
+                int index = map.get(firstChar);
 
-                if (arr[i].charAt(0) == arr[j].charAt(0)) {
+                String temp = arr[i];
+                arr[i] = arr[index];
+                arr[index]= temp;
 
-
-                    String temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-
-                    i = j;
-
-                }
+                map.remove(firstChar);
+            } else {
+                map.put(firstChar, i);
             }
         }
         return arr;
-        }
-
     }
+
+}
 
