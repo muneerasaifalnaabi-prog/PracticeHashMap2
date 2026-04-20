@@ -4,9 +4,11 @@ import java.util.Map;
 public class pairs {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
+        String[] arr ={"code", "bug"};
+        System.out.println();
 
     }
-    public static Map<String, String> wordLen(String []arr){
+    public static Map<String, String> pairs(String []arr){
         Map<String, String> map = new HashMap<>();
         for (String s:arr){
             char key =s.charAt(0);
