@@ -4,9 +4,10 @@ import java.util.Map;
 public class wordMultiple {
     public static void main(String[] args) {
         String[] words = {"a", "b", "a", "c", "b"};
+        System.out.println(wordMultiple(words));
 
     }
-    public static boolean wordMultiple(String [] arr ){
+    public static Map<String, Boolean> wordMultiple(String [] arr ){
         Map<String, Integer> map = new HashMap<>();
         Map<String, Boolean> map1 = new HashMap<>();
 
@@ -20,12 +21,10 @@ public class wordMultiple {
 
         }
         for (String r:map.keySet()){
-           if(map1.put(r,map.get(r)>=2)){
-               return true;
-           }
+            map1.put(r, map.get(r) >= 2);
+
         }
+        return map1;
 
-
-        return false;
     }
 }
