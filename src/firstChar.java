@@ -8,6 +8,11 @@ public class firstChar {
     public static Map<String, Integer> firstChar(String [] arr ){
         Map<String, String> map = new HashMap<>();
         for (String s :arr){
+            String key =String.valueOf(s.charAt(0));
+            if (map.containsKey(key)) {
+
+                ma
+            }
 
         }
 
