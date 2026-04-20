@@ -5,7 +5,7 @@ public class pairs {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
         String[] arr ={"code", "bug"};
-        System.out.println();
+        System.out.println(pairs(arr));
 
     }
     public static Map<String, String> pairs(String []arr){
