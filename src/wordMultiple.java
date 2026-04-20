@@ -3,6 +3,7 @@ import java.util.Map;
 
 public class wordMultiple {
     public static void main(String[] args) {
+        String[] words = {"a", "b", "a", "c", "b"};
 
     }
     public static boolean wordMultiple(String [] arr ){
