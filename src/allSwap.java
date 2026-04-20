@@ -11,21 +11,21 @@ public class allSwap {
     }
     public static String[] allSwap(String[] arr) {
         HashMap<String, Integer> map = new HashMap<>();
-
-        for (int i = 0; i < arr.length; i++) {
-            String firstChar = arr[i].substring(0, 1);
-
+        int counter = 0;
+        int index = 0;
+        for (String s : arr) {
+            String firstChar = s.substring(0, 1);
             if (map.containsKey(firstChar)) {
-                int index = map.get(firstChar);
-
-                String temp = arr[i];
-                arr[i] = arr[index];
-                arr[index]= temp;
-
+                index = map.get(firstChar);
+                String temp = arr[counter];
+                arr[counter] = arr[index];
+                arr[index] = temp;
                 map.remove(firstChar);
             } else {
-                map.put(firstChar, i);
+                map.put(firstChar, counter);
             }
+
+            counter = counter + 1;
         }
         return arr;
     }
