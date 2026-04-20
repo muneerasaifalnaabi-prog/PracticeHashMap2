@@ -9,14 +9,16 @@ public class wordCount {
     }
     public static Map<String, Integer> wordCount(String []arr){
         Map<String, Integer> map = new HashMap<>();
-        int count =0;
-        for (int i =0;i< arr.length;i++){
-           if(map.containsKey(arr[i])){
-               count=map.get(arr[i])+1;
-               map.put(arr[i],count);
-           }
+        for(String str : arr){
+            if (map.containsKey(str)) {
+                map.put(str,map.get(str)+1);
+            }else{
+                map.put(str,1);
+            }
         }
         return map;
 
+        }
+
     }
-}
+
