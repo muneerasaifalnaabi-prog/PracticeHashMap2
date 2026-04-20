@@ -7,6 +7,9 @@ public class pairs {
     }
     public static Map<String, String> wordLen(String []arr){
         Map<String, String> map = new HashMap<>();
+        for (String s:arr){
+
+        }
 
 
 
