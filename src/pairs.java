@@ -4,8 +4,8 @@ import java.util.Map;
 public class pairs {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
-        String[] arr ={"code", "bug"};
-        System.out.println(pairs(arr));
+        String[] array ={"code", "bug"};
+        System.out.println(pairs(array));
 
     }
     public static Map<String, String> pairs(String []arr){
