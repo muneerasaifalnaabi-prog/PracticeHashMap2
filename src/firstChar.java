@@ -4,6 +4,7 @@ import java.util.Map;
 public class firstChar {
     public static void main(String[] args) {
         String[] words = {"salt", "tea", "soda", "toast"};
+        System.out.println(firstChar(words));
 
     }
     public static Map<String, String> firstChar(String [] arr ){
